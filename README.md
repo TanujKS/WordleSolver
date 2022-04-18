@@ -33,3 +33,7 @@ $ python3 solve.py weary
 Guess: skied
 Letter s is: (y/g/n) n
 ```
+
+# Credits:
+
+https://github.com/fogleman/TWL06 for the `twl` module required to gather all the words in the English dictionary
