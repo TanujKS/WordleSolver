@@ -1,4 +1,10 @@
-from TWL06 import twl
+import twl
+
+import argparse
+parser = argparse.ArgumentParser(description="WordleSolver")
+parser.add_argument("starting_word", type=str, help="First word the solver will try to use")
+args = parser.parse_args()
+
 
 def get_english_word_of_length(length: int):
     english_words_of_length = []
@@ -85,7 +91,7 @@ class Solver:
         if len(self.green_letters) == 5:
             print(f"Winning word: {guess_word}")
             exit()
-            
+
         for word in self.possible_words:
             correct = True
             number_of_correct_letters = 0
@@ -113,4 +119,4 @@ class Solver:
 
 
 if __name__ == "__main__":
-    solver = Solver("house")
+    solver = Solver(args.starting_word)
