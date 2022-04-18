@@ -30,8 +30,12 @@ You will then be prompted to enter what color you got for each letter, 'g' repre
 ```
 $ python3 solve.py weary
 
-Guess: skied
-Letter s is: (y/g/n) n
+Guess: weary
+Letter w is: (y/g/n) n
+Letter e is: (y/g/n) y
+Letter a is: (y/g/n) y
+Letter r is: (y/g/n) n
+Letter y is: (y/g/n) n
 ```
 
 # Credits:
